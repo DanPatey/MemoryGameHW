@@ -13,6 +13,25 @@
 		574C22BB1EBFD1F500B73117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574C22B91EBFD1F500B73117 /* Main.storyboard */; };
 		574C22BD1EBFD1F500B73117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574C22BC1EBFD1F500B73117 /* Assets.xcassets */; };
 		574C22C01EBFD1F500B73117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574C22BE1EBFD1F500B73117 /* LaunchScreen.storyboard */; };
+		574C23011EBFDCE500B73117 /* barbara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22EE1EBFDCE500B73117 /* barbara.jpg */; };
+		574C23021EBFDCE500B73117 /* c37e471cbda190a9c8cce3892d3fda26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22EF1EBFDCE500B73117 /* c37e471cbda190a9c8cce3892d3fda26.jpg */; };
+		574C23031EBFDCE500B73117 /* charlie_1_20160614_1804687380.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22F01EBFDCE500B73117 /* charlie_1_20160614_1804687380.jpg */; };
+		574C23041EBFDCE500B73117 /* ciwHbm-L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22F11EBFDCE500B73117 /* ciwHbm-L.jpg */; };
+		574C23051EBFDCE500B73117 /* colour_blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 574C22F21EBFDCE500B73117 /* colour_blocks.png */; };
+		574C23061EBFDCE500B73117 /* cropped-image-17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22F31EBFDCE500B73117 /* cropped-image-17.jpg */; };
+		574C23071EBFDCE500B73117 /* dream-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22F41EBFDCE500B73117 /* dream-image.jpg */; };
+		574C23081EBFDCE500B73117 /* Image Essentials Stetson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22F51EBFDCE500B73117 /* Image Essentials Stetson.jpg */; };
+		574C23091EBFDCE500B73117 /* image-3-512x512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22F61EBFDCE500B73117 /* image-3-512x512.jpg */; };
+		574C230A1EBFDCE500B73117 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22F71EBFDCE500B73117 /* image.jpg */; };
+		574C230B1EBFDCE500B73117 /* Lichtenstein_img_processing_test.png in Resources */ = {isa = PBXBuildFile; fileRef = 574C22F81EBFDCE500B73117 /* Lichtenstein_img_processing_test.png */; };
+		574C230C1EBFDCE500B73117 /* noImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 574C22F91EBFDCE500B73117 /* noImg.png */; };
+		574C230D1EBFDCE500B73117 /* on_the_phone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22FA1EBFDCE500B73117 /* on_the_phone.jpg */; };
+		574C230E1EBFDCE500B73117 /* peppers.png in Resources */ = {isa = PBXBuildFile; fileRef = 574C22FB1EBFDCE500B73117 /* peppers.png */; };
+		574C230F1EBFDCE500B73117 /* Snapshot _ Roby  Coccy  IRDS 101 180 22 - Adulti.png in Resources */ = {isa = PBXBuildFile; fileRef = 574C22FC1EBFDCE500B73117 /* Snapshot _ Roby  Coccy  IRDS 101 180 22 - Adulti.png */; };
+		574C23101EBFDCE500B73117 /* Snapshot _ Roby  Coccy  IRDS 123 224 22 - Adulti.png in Resources */ = {isa = PBXBuildFile; fileRef = 574C22FD1EBFDCE500B73117 /* Snapshot _ Roby  Coccy  IRDS 123 224 22 - Adulti.png */; };
+		574C23111EBFDCE500B73117 /* Superdomo-la-rioja-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22FE1EBFDCE500B73117 /* Superdomo-la-rioja-image.jpg */; };
+		574C23121EBFDCE500B73117 /* texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C22FF1EBFDCE500B73117 /* texture.jpg */; };
+		574C23131EBFDCE500B73117 /* zaneplay_sm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 574C23001EBFDCE500B73117 /* zaneplay_sm.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +45,25 @@
 		574C22BC1EBFD1F500B73117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		574C22BF1EBFD1F500B73117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		574C22C11EBFD1F500B73117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574C22EE1EBFDCE500B73117 /* barbara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = barbara.jpg; path = images/barbara.jpg; sourceTree = "<group>"; };
+		574C22EF1EBFDCE500B73117 /* c37e471cbda190a9c8cce3892d3fda26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = c37e471cbda190a9c8cce3892d3fda26.jpg; path = images/c37e471cbda190a9c8cce3892d3fda26.jpg; sourceTree = "<group>"; };
+		574C22F01EBFDCE500B73117 /* charlie_1_20160614_1804687380.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = charlie_1_20160614_1804687380.jpg; path = images/charlie_1_20160614_1804687380.jpg; sourceTree = "<group>"; };
+		574C22F11EBFDCE500B73117 /* ciwHbm-L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ciwHbm-L.jpg"; path = "images/ciwHbm-L.jpg"; sourceTree = "<group>"; };
+		574C22F21EBFDCE500B73117 /* colour_blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = colour_blocks.png; path = images/colour_blocks.png; sourceTree = "<group>"; };
+		574C22F31EBFDCE500B73117 /* cropped-image-17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "cropped-image-17.jpg"; path = "images/cropped-image-17.jpg"; sourceTree = "<group>"; };
+		574C22F41EBFDCE500B73117 /* dream-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "dream-image.jpg"; path = "images/dream-image.jpg"; sourceTree = "<group>"; };
+		574C22F51EBFDCE500B73117 /* Image Essentials Stetson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Image Essentials Stetson.jpg"; path = "images/Image Essentials Stetson.jpg"; sourceTree = "<group>"; };
+		574C22F61EBFDCE500B73117 /* image-3-512x512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "image-3-512x512.jpg"; path = "images/image-3-512x512.jpg"; sourceTree = "<group>"; };
+		574C22F71EBFDCE500B73117 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.jpg; path = images/image.jpg; sourceTree = "<group>"; };
+		574C22F81EBFDCE500B73117 /* Lichtenstein_img_processing_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lichtenstein_img_processing_test.png; path = images/Lichtenstein_img_processing_test.png; sourceTree = "<group>"; };
+		574C22F91EBFDCE500B73117 /* noImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noImg.png; path = images/noImg.png; sourceTree = "<group>"; };
+		574C22FA1EBFDCE500B73117 /* on_the_phone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = on_the_phone.jpg; path = images/on_the_phone.jpg; sourceTree = "<group>"; };
+		574C22FB1EBFDCE500B73117 /* peppers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = peppers.png; path = images/peppers.png; sourceTree = "<group>"; };
+		574C22FC1EBFDCE500B73117 /* Snapshot _ Roby  Coccy  IRDS 101 180 22 - Adulti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Snapshot _ Roby  Coccy  IRDS 101 180 22 - Adulti.png"; path = "images/Snapshot _ Roby  Coccy  IRDS 101 180 22 - Adulti.png"; sourceTree = "<group>"; };
+		574C22FD1EBFDCE500B73117 /* Snapshot _ Roby  Coccy  IRDS 123 224 22 - Adulti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Snapshot _ Roby  Coccy  IRDS 123 224 22 - Adulti.png"; path = "images/Snapshot _ Roby  Coccy  IRDS 123 224 22 - Adulti.png"; sourceTree = "<group>"; };
+		574C22FE1EBFDCE500B73117 /* Superdomo-la-rioja-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Superdomo-la-rioja-image.jpg"; path = "images/Superdomo-la-rioja-image.jpg"; sourceTree = "<group>"; };
+		574C22FF1EBFDCE500B73117 /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = texture.jpg; path = images/texture.jpg; sourceTree = "<group>"; };
+		574C23001EBFDCE500B73117 /* zaneplay_sm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zaneplay_sm.jpg; path = images/zaneplay_sm.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +96,7 @@
 		574C22AF1EBFD1F500B73117 /* MemoryGameHW */ = {
 			isa = PBXGroup;
 			children = (
+				574C22ED1EBFD2D800B73117 /* images */,
 				574C22B31EBFD1F500B73117 /* AppDelegate.h */,
 				574C22B41EBFD1F500B73117 /* AppDelegate.m */,
 				574C22B61EBFD1F500B73117 /* ViewController.h */,
@@ -77,6 +116,32 @@
 				574C22B11EBFD1F500B73117 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		574C22ED1EBFD2D800B73117 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				574C22EE1EBFDCE500B73117 /* barbara.jpg */,
+				574C22EF1EBFDCE500B73117 /* c37e471cbda190a9c8cce3892d3fda26.jpg */,
+				574C22F01EBFDCE500B73117 /* charlie_1_20160614_1804687380.jpg */,
+				574C22F11EBFDCE500B73117 /* ciwHbm-L.jpg */,
+				574C22F21EBFDCE500B73117 /* colour_blocks.png */,
+				574C22F31EBFDCE500B73117 /* cropped-image-17.jpg */,
+				574C22F41EBFDCE500B73117 /* dream-image.jpg */,
+				574C22F51EBFDCE500B73117 /* Image Essentials Stetson.jpg */,
+				574C22F61EBFDCE500B73117 /* image-3-512x512.jpg */,
+				574C22F71EBFDCE500B73117 /* image.jpg */,
+				574C22F81EBFDCE500B73117 /* Lichtenstein_img_processing_test.png */,
+				574C22F91EBFDCE500B73117 /* noImg.png */,
+				574C22FA1EBFDCE500B73117 /* on_the_phone.jpg */,
+				574C22FB1EBFDCE500B73117 /* peppers.png */,
+				574C22FC1EBFDCE500B73117 /* Snapshot _ Roby  Coccy  IRDS 101 180 22 - Adulti.png */,
+				574C22FD1EBFDCE500B73117 /* Snapshot _ Roby  Coccy  IRDS 123 224 22 - Adulti.png */,
+				574C22FE1EBFDCE500B73117 /* Superdomo-la-rioja-image.jpg */,
+				574C22FF1EBFDCE500B73117 /* texture.jpg */,
+				574C23001EBFDCE500B73117 /* zaneplay_sm.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +204,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				574C22C01EBFD1F500B73117 /* LaunchScreen.storyboard in Resources */,
+				574C23021EBFDCE500B73117 /* c37e471cbda190a9c8cce3892d3fda26.jpg in Resources */,
+				574C23011EBFDCE500B73117 /* barbara.jpg in Resources */,
+				574C23061EBFDCE500B73117 /* cropped-image-17.jpg in Resources */,
+				574C23031EBFDCE500B73117 /* charlie_1_20160614_1804687380.jpg in Resources */,
+				574C230D1EBFDCE500B73117 /* on_the_phone.jpg in Resources */,
+				574C230F1EBFDCE500B73117 /* Snapshot _ Roby  Coccy  IRDS 101 180 22 - Adulti.png in Resources */,
 				574C22BD1EBFD1F500B73117 /* Assets.xcassets in Resources */,
+				574C230B1EBFDCE500B73117 /* Lichtenstein_img_processing_test.png in Resources */,
+				574C23091EBFDCE500B73117 /* image-3-512x512.jpg in Resources */,
+				574C23101EBFDCE500B73117 /* Snapshot _ Roby  Coccy  IRDS 123 224 22 - Adulti.png in Resources */,
+				574C23081EBFDCE500B73117 /* Image Essentials Stetson.jpg in Resources */,
+				574C230E1EBFDCE500B73117 /* peppers.png in Resources */,
+				574C230C1EBFDCE500B73117 /* noImg.png in Resources */,
+				574C23051EBFDCE500B73117 /* colour_blocks.png in Resources */,
+				574C23121EBFDCE500B73117 /* texture.jpg in Resources */,
+				574C230A1EBFDCE500B73117 /* image.jpg in Resources */,
+				574C23131EBFDCE500B73117 /* zaneplay_sm.jpg in Resources */,
+				574C23041EBFDCE500B73117 /* ciwHbm-L.jpg in Resources */,
+				574C23111EBFDCE500B73117 /* Superdomo-la-rioja-image.jpg in Resources */,
 				574C22BB1EBFD1F500B73117 /* Main.storyboard in Resources */,
+				574C23071EBFDCE500B73117 /* dream-image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
