@@ -12,6 +12,9 @@
     
     NSMutableArray *blocksArr;
     NSMutableArray *centersArr;
+    
+    NSTimer *gameTimer;
+    int currentTime;
 }
 @end
 
@@ -31,6 +34,7 @@
     
     [self blockMakerAction];
     [self randomizeAction];
+    [self resetAction: 4];
 }
 
 - (void) blockMakerAction {
@@ -81,6 +85,39 @@
     }
 }
 
+- (void) resetAction:(int)inputGridSize {
+    for (UIView *any in _gameView.subviews)
+        [any removeFromSuperview];
+    
+    [blocksArr removeAllObjects];
+    [centersArr removeAllObjects];
+    
+    gridSize = inputGridSize;
+    
+    [self blockMakerAction];
+    [self randomizeAction];
+    
+    for (UIImageView *any in blocksArr)
+        any.image = [UIImage imageNamed: @"noImg.png"];
+    
+    currentTime = 0;
+    [gameTimer invalidate];
+    gameTimer = [NSTimer scheduledTimerWithTimeInterval: 1
+                                                 target: self
+                                                 selector: @selector(timerAction)
+                                                 userInfo:nil
+                                                 repeats:YES];
+}
+
+- (void) timerAction {
+    currentTime++;
+    int timeMins = abs(currentTime / 60);
+    int timeSecs = currentTime % 60;
+    NSString *timeString = [NSString stringWithFormat:@"%d\':%d\" ", timeMins, timeSecs];
+    _timerLabel.text = timeString;
+    
+}
+
 - (void) arrayMakeAction {
 
     imgsArr = [[NSArray alloc] initWithObjects:
@@ -106,11 +143,11 @@
 }
 
 - (IBAction)resetFourAction:(id)sender {
-    
+    [self resetAction:4];
 }
 
 - (IBAction)resetSixAction:(id)sender {
-    
+    [self resetAction:6];
 }
 
 @end
