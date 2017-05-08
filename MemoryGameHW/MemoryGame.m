@@ -15,6 +15,12 @@
     
     NSTimer *gameTimer;
     int currentTime;
+    
+    BOOL compareState;
+    int indexOfFirstImageView;
+    int indexOfSecondImageView;
+    
+    BOOL tapIsAllowed;
 }
 @end
 
@@ -22,19 +28,81 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self blockMakerAction];
+    [self randomizeAction];
 }
 
 - (void) viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:YES];
+    [super viewDidAppear:TRUE];
     [self arrayMakeAction];
 
     [_gameView layoutIfNeeded];
     gameViewWidth = _gameView.bounds.size.width;
     gridSize = 4;
     
-    [self blockMakerAction];
-    [self randomizeAction];
     [self resetAction: 4];
+    compareState = false;
+    tapIsAllowed = true;
+}
+
+- (void) touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *myTouch = [[touches allObjects] objectAtIndex: 0];
+    
+    if ( [blocksArr containsObject: myTouch.view ] && tapIsAllowed) {
+        UIImageView *thisImageView = (UIImageView *) myTouch.view;
+        
+        int indexOfImageView = (int) [blocksArr indexOfObject: thisImageView];
+        
+        if (indexOfImageView >= gridSize*gridSize/2)
+            indexOfImageView = indexOfImageView - (gridSize*gridSize/2);
+        
+        if (compareState) {
+            indexOfSecondImageView = (int) [blocksArr indexOfObject: thisImageView];
+        } else {
+            indexOfFirstImageView = (int) [blocksArr indexOfObject: thisImageView];
+        }
+        
+        
+        [UIView transitionWithView:thisImageView
+                          duration:.25
+                          options:UIViewAnimationOptionTransitionCrossDissolve
+                          animations:^{
+                              tapIsAllowed = false;
+                              thisImageView.image = [UIImage imageNamed: [imgsArr objectAtIndex: indexOfImageView]];
+                          }
+                          completion:^(BOOL finished) {
+                              tapIsAllowed = true;
+                              if (compareState) {
+                                  [self compareAction];
+                                  compareState = false;
+                              } else {
+                                  compareState = true;
+                              }
+                          }];
+    }
+    
+}
+
+- (void) compareAction {
+    if ( abs(indexOfSecondImageView - indexOfFirstImageView) == gridSize*gridSize/2) {
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationCurve:.5];
+        [[blocksArr objectAtIndex:indexOfFirstImageView] setAlpha:0];
+        [[blocksArr objectAtIndex:indexOfSecondImageView] setAlpha:0];
+        [UIView commitAnimations];
+    } else {
+        UIImageView *firstImgView = [blocksArr objectAtIndex:indexOfFirstImageView];
+        UIImageView *secondImgView = [blocksArr objectAtIndex:indexOfSecondImageView];
+        [UIView transitionWithView:self.view
+                            duration:.5
+                            options:UIViewAnimationOptionTransitionCrossDissolve
+                            animations:^{
+                                            firstImgView.image = [UIImage imageNamed:@"noImg.png"];
+                                            secondImgView.image = [UIImage imageNamed:@"noImg.png"];
+                                        }
+                            completion:nil];
+        NSLog(@"IN THE ELSE STATEMENT");
+    }
 }
 
 - (void) blockMakerAction {
@@ -55,12 +123,15 @@
             }
             
             UIImageView *block = [[UIImageView alloc] init];
+            
             CGRect blockFrame = CGRectMake(0, 0, blockWidth - 10, blockWidth - 10);
             block.frame = blockFrame;
             block.image = [UIImage imageNamed:[imgsArr objectAtIndex:counter]];
             
             CGPoint newCenter = CGPointMake(xCen, yCen);
             block.center = newCenter;
+            block.userInteractionEnabled = TRUE;
+            
             [blocksArr addObject: block];
             [centersArr addObject: [NSValue valueWithCGPoint: newCenter]];
             
@@ -106,7 +177,7 @@
                                                  target: self
                                                  selector: @selector(timerAction)
                                                  userInfo:nil
-                                                 repeats:YES];
+                                                 repeats:TRUE];
 }
 
 - (void) timerAction {
