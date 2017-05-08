@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		574C22B21EBFD1F500B73117 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 574C22B11EBFD1F500B73117 /* main.m */; };
 		574C22B51EBFD1F500B73117 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 574C22B41EBFD1F500B73117 /* AppDelegate.m */; };
-		574C22B81EBFD1F500B73117 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574C22B71EBFD1F500B73117 /* ViewController.m */; };
+		574C22B81EBFD1F500B73117 /* MemoryGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 574C22B71EBFD1F500B73117 /* MemoryGame.m */; };
 		574C22BB1EBFD1F500B73117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574C22B91EBFD1F500B73117 /* Main.storyboard */; };
 		574C22BD1EBFD1F500B73117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574C22BC1EBFD1F500B73117 /* Assets.xcassets */; };
 		574C22C01EBFD1F500B73117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574C22BE1EBFD1F500B73117 /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		574C22B11EBFD1F500B73117 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		574C22B31EBFD1F500B73117 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		574C22B41EBFD1F500B73117 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		574C22B61EBFD1F500B73117 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		574C22B71EBFD1F500B73117 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		574C22B61EBFD1F500B73117 /* MemoryGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryGame.h; sourceTree = "<group>"; };
+		574C22B71EBFD1F500B73117 /* MemoryGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryGame.m; sourceTree = "<group>"; };
 		574C22BA1EBFD1F500B73117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		574C22BC1EBFD1F500B73117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		574C22BF1EBFD1F500B73117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 				574C22ED1EBFD2D800B73117 /* images */,
 				574C22B31EBFD1F500B73117 /* AppDelegate.h */,
 				574C22B41EBFD1F500B73117 /* AppDelegate.m */,
-				574C22B61EBFD1F500B73117 /* ViewController.h */,
-				574C22B71EBFD1F500B73117 /* ViewController.m */,
+				574C22B61EBFD1F500B73117 /* MemoryGame.h */,
+				574C22B71EBFD1F500B73117 /* MemoryGame.m */,
 				574C22B91EBFD1F500B73117 /* Main.storyboard */,
 				574C22BC1EBFD1F500B73117 /* Assets.xcassets */,
 				574C22BE1EBFD1F500B73117 /* LaunchScreen.storyboard */,
@@ -235,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				574C22B81EBFD1F500B73117 /* ViewController.m in Sources */,
+				574C22B81EBFD1F500B73117 /* MemoryGame.m in Sources */,
 				574C22B51EBFD1F500B73117 /* AppDelegate.m in Sources */,
 				574C22B21EBFD1F500B73117 /* main.m in Sources */,
 			);
