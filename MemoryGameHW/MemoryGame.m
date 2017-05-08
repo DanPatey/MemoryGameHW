@@ -21,6 +21,7 @@
     int indexOfSecondImageView;
     
     BOOL tapIsAllowed;
+    int matchedSoFar;
 }
 @end
 
@@ -90,6 +91,10 @@
         [[blocksArr objectAtIndex:indexOfFirstImageView] setAlpha:0];
         [[blocksArr objectAtIndex:indexOfSecondImageView] setAlpha:0];
         [UIView commitAnimations];
+        
+        matchedSoFar++;
+        if (matchedSoFar == gridSize*gridSize/2)
+            [self resetAction:4];
     } else {
         UIImageView *firstImgView = [blocksArr objectAtIndex:indexOfFirstImageView];
         UIImageView *secondImgView = [blocksArr objectAtIndex:indexOfSecondImageView];
@@ -101,7 +106,6 @@
                                             secondImgView.image = [UIImage imageNamed:@"noImg.png"];
                                         }
                             completion:nil];
-        NSLog(@"IN THE ELSE STATEMENT");
     }
 }
 
@@ -171,6 +175,7 @@
     for (UIImageView *any in blocksArr)
         any.image = [UIImage imageNamed: @"noImg.png"];
     
+    matchedSoFar = 0;
     currentTime = 0;
     [gameTimer invalidate];
     gameTimer = [NSTimer scheduledTimerWithTimeInterval: 1
