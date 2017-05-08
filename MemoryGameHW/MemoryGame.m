@@ -9,18 +9,34 @@
     NSArray *imgsArr;
     float gameViewWidth;
     int gridSize;
+    
+    NSMutableArray *blocksArr;
+    NSMutableArray *centersArr;
 }
 @end
 
 @implementation MemoryGame
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
 
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
     [self arrayMakeAction];
 
     [_gameView layoutIfNeeded];
-    gridSize = 4;
     gameViewWidth = _gameView.bounds.size.width;
+    gridSize = 4;
+    
+    [self blockMakerAction];
+    [self randomizeAction];
+}
+
+- (void) blockMakerAction {
+    
+    blocksArr = [NSMutableArray new];
+    centersArr = [NSMutableArray new];
     
     float blockWidth = gameViewWidth / gridSize;
     
@@ -38,7 +54,12 @@
             CGRect blockFrame = CGRectMake(0, 0, blockWidth - 10, blockWidth - 10);
             block.frame = blockFrame;
             block.image = [UIImage imageNamed:[imgsArr objectAtIndex:counter]];
-            block.center = CGPointMake(xCen, yCen);
+            
+            CGPoint newCenter = CGPointMake(xCen, yCen);
+            block.center = newCenter;
+            [blocksArr addObject: block];
+            [centersArr addObject: [NSValue valueWithCGPoint: newCenter]];
+            
             [_gameView addSubview:block];
             
             xCen = xCen + blockWidth;
@@ -49,8 +70,15 @@
     }
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void) randomizeAction {
+    NSMutableArray *tempCentersArr = [centersArr mutableCopy];
+    
+    for (UIImageView * block in blocksArr) {
+        int randomIndex = arc4random() % tempCentersArr.count;
+        CGPoint randomCenter = [[tempCentersArr objectAtIndex: randomIndex] CGPointValue];
+        block.center = randomCenter;
+        [tempCentersArr removeObjectAtIndex: randomIndex];
+    }
 }
 
 - (void) arrayMakeAction {
