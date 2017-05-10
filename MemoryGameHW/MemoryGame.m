@@ -4,6 +4,7 @@
 //  Copyright © 2017 Dan Patey. All rights reserved.
 
 #import "MemoryGame.h"
+#import "BlockModel.h"
 
 @interface MemoryGame () {
     NSArray *imgsArr;
@@ -23,6 +24,7 @@
     BOOL tapIsAllowed;
     int matchedSoFar;
 }
+
 @end
 
 @implementation MemoryGame
@@ -35,7 +37,10 @@
 
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:TRUE];
-    [self arrayMakeAction];
+
+    BlockModel *blocks = [[BlockModel alloc] init];
+    imgsArr = [blocks createBlockArray];
+    [blocks downloadImages];
 
     [_gameView layoutIfNeeded];
     gameViewWidth = _gameView.bounds.size.width;
@@ -63,7 +68,6 @@
             indexOfFirstImageView = (int) [blocksArr indexOfObject: thisImageView];
         }
         
-        
         [UIView transitionWithView:thisImageView
                           duration:.25
                           options:UIViewAnimationOptionTransitionCrossDissolve
@@ -81,7 +85,6 @@
                               }
                           }];
     }
-    
 }
 
 - (void) compareAction {
@@ -110,12 +113,10 @@
 }
 
 - (void) blockMakerAction {
-    
     blocksArr = [NSMutableArray new];
     centersArr = [NSMutableArray new];
     
     float blockWidth = gameViewWidth / gridSize;
-    
     float xCen = blockWidth / 2;
     float yCen = blockWidth / 2;
     int counter = 0;
@@ -191,31 +192,6 @@
     int timeSecs = currentTime % 60;
     NSString *timeString = [NSString stringWithFormat:@"%d\':%d\" ", timeMins, timeSecs];
     _timerLabel.text = timeString;
-    
-}
-
-- (void) arrayMakeAction {
-
-    imgsArr = [[NSArray alloc] initWithObjects:
-               @"barbara.jpg",
-               @"c37e471cbda190a9c8cce3892d3fda26.jpg",
-               @"charlie_1_20160614_1804687380.jpg",
-               @"ciwHbm-L.jpg",
-               @"colour_blocks.png",
-               @"cropped-image-17.jpg",
-               @"dream-image.jpg",
-               @"Image Essentials Stetson.jpg",
-               @"image-3-512x512.jpg",
-               @"image.jpg",
-               @"Lichtenstein_img_processing_test.png",
-               @"noImg.png",
-               @"on_the_phone.jpg",
-               @"peppers.png",
-               @"Snapshot _ Roby  Coccy  IRDS 101 180 22 - Adulti.png",
-               @"Snapshot _ Roby  Coccy  IRDS 123 224 22 - Adulti.png",
-               @"Superdomo-la-rioja-image.jpg",
-               @"texture.jpg",
-               @"zaneplay_sm.jpg", nil];
 }
 
 - (IBAction)resetFourAction:(id)sender {

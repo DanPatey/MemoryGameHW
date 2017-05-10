@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57200E7C1EC0DE0200B4D79A /* BlockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57200E7B1EC0DE0200B4D79A /* BlockModel.m */; };
+		57200E7E1EC1213000B4D79A /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57200E7D1EC1213000B4D79A /* Keys.plist */; };
 		574C22B21EBFD1F500B73117 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 574C22B11EBFD1F500B73117 /* main.m */; };
 		574C22B51EBFD1F500B73117 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 574C22B41EBFD1F500B73117 /* AppDelegate.m */; };
 		574C22B81EBFD1F500B73117 /* MemoryGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 574C22B71EBFD1F500B73117 /* MemoryGame.m */; };
@@ -35,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57200E7A1EC0DE0200B4D79A /* BlockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockModel.h; sourceTree = "<group>"; };
+		57200E7B1EC0DE0200B4D79A /* BlockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockModel.m; sourceTree = "<group>"; };
+		57200E7D1EC1213000B4D79A /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		574C22AD1EBFD1F500B73117 /* MemoryGameHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGameHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		574C22B11EBFD1F500B73117 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		574C22B31EBFD1F500B73117 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,12 +104,15 @@
 				574C22ED1EBFD2D800B73117 /* images */,
 				574C22B31EBFD1F500B73117 /* AppDelegate.h */,
 				574C22B41EBFD1F500B73117 /* AppDelegate.m */,
+				57200E7A1EC0DE0200B4D79A /* BlockModel.h */,
+				57200E7B1EC0DE0200B4D79A /* BlockModel.m */,
 				574C22B61EBFD1F500B73117 /* MemoryGame.h */,
 				574C22B71EBFD1F500B73117 /* MemoryGame.m */,
 				574C22B91EBFD1F500B73117 /* Main.storyboard */,
 				574C22BC1EBFD1F500B73117 /* Assets.xcassets */,
 				574C22BE1EBFD1F500B73117 /* LaunchScreen.storyboard */,
 				574C22C11EBFD1F500B73117 /* Info.plist */,
+				57200E7D1EC1213000B4D79A /* Keys.plist */,
 				574C22B01EBFD1F500B73117 /* Supporting Files */,
 			);
 			path = MemoryGameHW;
@@ -216,6 +224,7 @@
 				574C23101EBFDCE500B73117 /* Snapshot _ Roby  Coccy  IRDS 123 224 22 - Adulti.png in Resources */,
 				574C23081EBFDCE500B73117 /* Image Essentials Stetson.jpg in Resources */,
 				574C230E1EBFDCE500B73117 /* peppers.png in Resources */,
+				57200E7E1EC1213000B4D79A /* Keys.plist in Resources */,
 				574C230C1EBFDCE500B73117 /* noImg.png in Resources */,
 				574C23051EBFDCE500B73117 /* colour_blocks.png in Resources */,
 				574C23121EBFDCE500B73117 /* texture.jpg in Resources */,
@@ -238,6 +247,7 @@
 				574C22B81EBFD1F500B73117 /* MemoryGame.m in Sources */,
 				574C22B51EBFD1F500B73117 /* AppDelegate.m in Sources */,
 				574C22B21EBFD1F500B73117 /* main.m in Sources */,
+				57200E7C1EC0DE0200B4D79A /* BlockModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +406,7 @@
 				574C22C61EBFD1F500B73117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

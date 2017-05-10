@@ -15,5 +15,4 @@
 - (IBAction)resetFourAction:(id)sender;
 - (IBAction)resetSixAction:(id)sender;
 
-
 @end
